@@ -28,10 +28,6 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v4
-      - name: Accept Android SDK licenses
-        run: |
-          set -o pipefail
-          yes | sdkmanager --licenses
 
       - name: Install Android SDK packages
         run: |
